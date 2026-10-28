@@ -1,0 +1,4 @@
+#Wed Oct 28 17:18:00 GMT+07:00 2026
+base.0=D\:\\TH2\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

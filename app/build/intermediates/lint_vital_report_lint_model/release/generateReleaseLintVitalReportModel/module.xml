@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="D:\TH2\app"
+    name=":"
+    type="APP"
+    maven=":ContactManager:unspecified"
+    agpVersion="8.8.0"
+    buildFolder="build"
+    bootClassPath="D:\AndroidSDK\platforms\android-35\android.jar;D:\AndroidSDK\build-tools\35.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

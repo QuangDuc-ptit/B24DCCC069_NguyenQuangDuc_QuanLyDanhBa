@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_groups">
+        <item>Gia đình</item>
+        <item>Bạn bè</item>
+        <item>Công việc</item>
+        <item>Khác</item>
+    </string-array>
+    <color name="accent_light">#A8C686</color>
+    <color name="accent_pale">#D3E0B8</color>
+    <color name="bg_cream">#FAF1E4</color>
+    <color name="error_red">#C0392B</color>
+    <color name="green_500">#4F7F5E</color>
+    <color name="green_700">#1F5D4A</color>
+    <color name="green_800">#0F4C45</color>
+    <color name="green_900">#0B3B33</color>
+    <color name="green_card">#2A4A33</color>
+    <color name="star_yellow">#F2B705</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="text_primary">#0B3B33</color>
+    <color name="text_secondary">#5F7A70</color>
+    <string name="add_contact">+ Thêm liên hệ</string>
+    <string name="add_contact_title">Thêm liên hệ</string>
+    <string name="add_to_favorite">Thêm vào yêu thích</string>
+    <string name="app_name">Quản lý danh bạ</string>
+    <string name="back">Quay lại</string>
+    <string name="call">Gọi điện</string>
+    <string name="contacts_title">Danh bạ</string>
+    <string name="delete_contact">Xóa liên hệ</string>
+    <string name="empty_note">Chưa có ghi chú</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="favorite_contacts">yêu thích</string>
+    <string name="female">Nữ</string>
+    <string name="gender_label">Giới tính</string>
+    <string name="group_gender_label">Nhóm và giới tính</string>
+    <string name="login">Đăng nhập</string>
+    <string name="login_error">Thông tin đăng nhập không hợp lệ</string>
+    <string name="login_subtitle">Đăng nhập để tiếp tục</string>
+    <string name="male">Nam</string>
+    <string name="name_hint">Họ và tên</string>
+    <string name="note_hint">Ghi chú (không bắt buộc)</string>
+    <string name="note_label">Ghi chú</string>
+    <string name="other">Khác</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="phone_hint">Số điện thoại</string>
+    <string name="phone_label">Số điện thoại</string>
+    <string name="sample_contact_group_gender">Bạn bè • Nam</string>
+    <string name="sample_contact_initial">A</string>
+    <string name="sample_contact_name">Nguyễn Văn An</string>
+    <string name="sample_contact_phone">0123456789</string>
+    <string name="sample_favorite">1 yêu thích</string>
+    <string name="sample_total">3 liên hệ</string>
+    <string name="save_contact">Lưu liên hệ</string>
+    <string name="total_contacts">Tổng</string>
+    <string name="username_hint">Tên đăng nhập</string>
+    <style name="Theme.ContactManager" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_800</item>
+        <item name="colorOnPrimary">@color/bg_cream</item>
+        <item name="colorSecondary">@color/accent_light</item>
+        <item name="android:windowBackground">@color/bg_cream</item>
+        <item name="android:statusBarColor">@color/green_800</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="fontFamily">sans</item>
+    </style>
+    <style name="Widget.ContactManager.Button.Danger" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_danger</item>
+        <item name="android:textColor">@color/error_red</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="Widget.ContactManager.Button.Outline" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_outline</item>
+        <item name="android:textColor">@color/green_800</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="Widget.ContactManager.Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">@color/bg_cream</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+    <style name="Widget.ContactManager.EditText" parent="Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+</resources>

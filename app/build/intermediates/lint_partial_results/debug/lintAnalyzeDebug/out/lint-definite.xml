@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.8.0" type="incidents">
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of com.android.application than 8.8.0 is available: 9.4.1. (There is also a newer version of 8.8.𝑥 available, if upgrading to 9.4.1 is difficult: 8.8.2)">
+        <fix-alternatives>
+            <fix-replace
+                description="Change to 9.4.1"
+                family="Update versions"
+                oldString="8.8.0"
+                replacement="9.4.1"
+                priority="0"/>
+            <fix-replace
+                description="Change to 8.8.2"
+                family="Update versions"
+                robot="true"
+                independent="true"
+                oldString="8.8.0"
+                replacement="8.8.2"
+                priority="0"/>
+        </fix-alternatives>
+        <location
+            file="${:*projectDir}/build.gradle"
+            line="2"
+            column="42"
+            startOffset="52"
+            endLine="2"
+            endColumn="49"
+            endOffset="59"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.12.0 is available: 1.14.0">
+        <fix-replace
+            description="Change to 1.14.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.14.0"
+            priority="0"/>
+        <location
+            file="${:*projectDir}/build.gradle"
+            line="19"
+            column="20"
+            startOffset="353"
+            endLine="19"
+            endColumn="65"
+            endOffset="398"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="23"
+            column="10"
+            startOffset="937"
+            endLine="23"
+            endColumn="22"
+            endOffset="949"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/bg_cream` with a theme that also paints a background (inferred theme is `@style/Theme.ContactManager`)">
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_contact.xml"
+            line="3"
+            column="33"
+            startOffset="182"
+            endLine="3"
+            endColumn="69"
+            endOffset="218"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/bg_cream` with a theme that also paints a background (inferred theme is `@style/Theme.ContactManager`)">
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_contact_detail.xml"
+            line="4"
+            column="36"
+            startOffset="244"
+            endLine="4"
+            endColumn="72"
+            endOffset="280"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/bg_cream` with a theme that also paints a background (inferred theme is `@style/Theme.ContactManager`)">
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="7"
+            column="5"
+            startOffset="266"
+            endLine="7"
+            endColumn="41"
+            endOffset="302"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/bg_cream` with a theme that also paints a background (inferred theme is `@style/Theme.ContactManager`)">
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="7"
+            column="5"
+            startOffset="282"
+            endLine="7"
+            endColumn="41"
+            endOffset="318"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_contact.xml"
+            line="13"
+            column="10"
+            startOffset="1076"
+            endLine="13"
+            endColumn="18"
+            endOffset="1084"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_contact.xml"
+            line="15"
+            column="10"
+            startOffset="1360"
+            endLine="15"
+            endColumn="18"
+            endOffset="1368"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_contact.xml"
+            line="32"
+            column="10"
+            startOffset="3522"
+            endLine="32"
+            endColumn="18"
+            endOffset="3530"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="32"
+            column="6"
+            startOffset="1244"
+            endLine="32"
+            endColumn="14"
+            endOffset="1252"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_login.xml"
+            line="40"
+            column="6"
+            startOffset="1559"
+            endLine="40"
+            endColumn="14"
+            endOffset="1567"/>
+    </incident>
+
+</incidents>

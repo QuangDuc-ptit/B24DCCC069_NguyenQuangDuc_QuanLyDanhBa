@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/bg_cream">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <ImageButton android:id="@+id/btnBack" android:layout_width="48dp" android:layout_height="48dp"
+                android:background="@android:color/transparent" android:src="@drawable/ic_back" android:contentDescription="@string/back"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp"
+                android:text="@string/add_contact_title" android:textColor="@color/green_900" android:textSize="24sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <EditText android:id="@+id/edtName" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="24dp" android:hint="@string/name_hint" android:inputType="textPersonName|textCapWords"/>
+        <EditText android:id="@+id/edtPhone" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="12dp" android:hint="@string/phone_hint" android:inputType="phone" android:maxLength="10"/>
+        <Spinner android:id="@+id/spnGroup" android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_edittext" android:entries="@array/contact_groups" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+            android:text="@string/gender_label" android:textColor="@color/green_900" android:textSize="16sp" android:textStyle="bold"/>
+        <RadioGroup android:id="@+id/rgGender" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="4dp">
+            <RadioButton android:id="@+id/rbMale" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:buttonTint="@color/green_800" android:checked="true" android:text="@string/male" android:textColor="@color/text_primary"/>
+            <RadioButton android:id="@+id/rbFemale" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" android:buttonTint="@color/green_800" android:text="@string/female" android:textColor="@color/text_primary"/>
+            <RadioButton android:id="@+id/rbOther" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" android:buttonTint="@color/green_800" android:text="@string/other" android:textColor="@color/text_primary"/>
+        </RadioGroup>
+        <CheckBox android:id="@+id/chkFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:buttonTint="@color/green_800" android:text="@string/add_to_favorite" android:textColor="@color/text_primary"/>
+        <EditText android:id="@+id/edtNote" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="top" android:hint="@string/note_hint" android:inputType="textMultiLine" android:minLines="3"/>
+        <Button android:id="@+id/btnSave" style="@style/Widget.ContactManager.Button.Primary" android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="24dp" android:text="@string/save_contact"/>
+    </LinearLayout>
+</ScrollView>

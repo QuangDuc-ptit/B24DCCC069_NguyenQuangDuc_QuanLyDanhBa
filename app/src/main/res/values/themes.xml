@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.ContactManager" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_800</item>
+        <item name="colorOnPrimary">@color/bg_cream</item>
+        <item name="colorSecondary">@color/accent_light</item>
+        <item name="android:windowBackground">@color/bg_cream</item>
+        <item name="android:statusBarColor">@color/green_800</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="fontFamily">sans</item>
+    </style>
+</resources>

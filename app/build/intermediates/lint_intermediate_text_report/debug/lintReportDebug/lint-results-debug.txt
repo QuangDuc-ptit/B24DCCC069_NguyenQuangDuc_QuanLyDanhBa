@@ -1,0 +1,155 @@
+D:\TH2\app\build.gradle:2: Warning: A newer version of com.android.application than 8.8.0 is available: 9.4.1. (There is also a newer version of 8.8.𝑥 available, if upgrading to 9.4.1 is difficult: 8.8.2) [AndroidGradlePluginVersion]
+    id 'com.android.application' version '8.8.0'
+                                         ~~~~~~~
+
+   Explanation for issues of type "AndroidGradlePluginVersion":
+   This detector looks for usage of the Android Gradle Plugin where the
+   version you are using is not the current stable release. Using older
+   versions is fine, and there are cases where you deliberately want to stick
+   with an older version. However, you may simply not be aware that a more
+   recent version is available, and that is what this lint check helps find.
+
+D:\TH2\app\build.gradle:19: Warning: A newer version of com.google.android.material:material than 1.12.0 is available: 1.14.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+D:\TH2\app\src\main\res\layout\activity_main.xml:23: Warning: Set android:baselineAligned="false" on this element for better performance [DisableBaselineAlignment]
+        <LinearLayout
+         ~~~~~~~~~~~~
+
+   Explanation for issues of type "DisableBaselineAlignment":
+   When a LinearLayout is used to distribute the space proportionally between
+   nested layouts, the baseline alignment property should be turned off to
+   make the layout computation faster.
+
+D:\TH2\app\src\main\res\layout\activity_add_contact.xml:3: Warning: Possible overdraw: Root element paints background @color/bg_cream with a theme that also paints a background (inferred theme is @style/Theme.ContactManager) [Overdraw]
+    android:fillViewport="true" android:background="@color/bg_cream">
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_contact_detail.xml:4: Warning: Possible overdraw: Root element paints background @color/bg_cream with a theme that also paints a background (inferred theme is @style/Theme.ContactManager) [Overdraw]
+    android:orientation="vertical" android:background="@color/bg_cream">
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_login.xml:7: Warning: Possible overdraw: Root element paints background @color/bg_cream with a theme that also paints a background (inferred theme is @style/Theme.ContactManager) [Overdraw]
+    android:background="@color/bg_cream">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_main.xml:7: Warning: Possible overdraw: Root element paints background @color/bg_cream with a theme that also paints a background (inferred theme is @style/Theme.ContactManager) [Overdraw]
+    android:background="@color/bg_cream">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+D:\TH2\app\src\main\res\drawable\bg_chip_group.xml:1: Warning: The resource R.drawable.bg_chip_group appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+^
+D:\TH2\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.green_card appears to be unused [UnusedResources]
+    <color name="green_card">#2A4A33</color>
+           ~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\values\colors.xml:9: Warning: The resource R.color.accent_pale appears to be unused [UnusedResources]
+    <color name="accent_pale">#D3E0B8</color>
+           ~~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\values\colors.xml:13: Warning: The resource R.color.star_yellow appears to be unused [UnusedResources]
+    <color name="star_yellow">#F2B705</color>
+           ~~~~~~~~~~~~~~~~~~
+D:\TH2\app\src\main\res\drawable\ic_add.xml:1: Warning: The resource R.drawable.ic_add appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+D:\TH2\app\src\main\res\drawable\ic_delete.xml:1: Warning: The resource R.drawable.ic_delete appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+D:\TH2\app\src\main\res\drawable\ic_star.xml:1: Warning: The resource R.drawable.ic_star appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+D:\TH2\app\src\main\res\drawable\ic_star_outline.xml:1: Warning: The resource R.drawable.ic_star_outline appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+^
+D:\TH2\app\src\main\res\layout\item_contact.xml:1: Warning: The resource R.layout.item_contact appears to be unused [UnusedResources]
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+D:\TH2\app\src\main\AndroidManifest.xml:2: Warning: Should explicitly set android:icon, there is no default [MissingApplicationIcon]
+    <application
+     ~~~~~~~~~~~
+
+   Explanation for issues of type "MissingApplicationIcon":
+   You should set an icon for the application as whole because there is no
+   default. This attribute must be set as a reference to a drawable resource
+   containing the image (for example @drawable/icon).
+
+   https://developer.android.com/studio/publish/preparing#publishing-configure
+
+D:\TH2\app\src\main\res\layout\activity_add_contact.xml:13: Warning: Missing autofillHints attribute [Autofill]
+        <EditText android:id="@+id/edtName" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="56dp"
+         ~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_add_contact.xml:15: Warning: Missing autofillHints attribute [Autofill]
+        <EditText android:id="@+id/edtPhone" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="56dp"
+         ~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_add_contact.xml:32: Warning: Missing autofillHints attribute [Autofill]
+        <EditText android:id="@+id/edtNote" style="@style/Widget.ContactManager.EditText" android:layout_width="match_parent" android:layout_height="wrap_content"
+         ~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_login.xml:32: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+D:\TH2\app\src\main\res\layout\activity_login.xml:40: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+0 errors, 22 warnings

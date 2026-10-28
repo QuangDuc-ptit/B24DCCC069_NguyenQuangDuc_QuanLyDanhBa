@@ -1,0 +1,15 @@
+<resources>
+    <color name="bg_cream">#FAF1E4</color>
+    <color name="green_900">#0B3B33</color>
+    <color name="green_800">#0F4C45</color>
+    <color name="green_700">#1F5D4A</color>
+    <color name="green_card">#2A4A33</color>
+    <color name="green_500">#4F7F5E</color>
+    <color name="accent_light">#A8C686</color>
+    <color name="accent_pale">#D3E0B8</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="text_primary">#0B3B33</color>
+    <color name="text_secondary">#5F7A70</color>
+    <color name="star_yellow">#F2B705</color>
+    <color name="error_red">#C0392B</color>
+</resources>

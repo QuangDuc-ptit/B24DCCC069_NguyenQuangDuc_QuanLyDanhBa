@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_button_danger.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_button_danger.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_phone.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_logo.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_logo.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_header_bottom_round.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_header_bottom_round.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_star_outline.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_star_outline.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_activity_contact_detail.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/activity_contact_detail.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_chip_group.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_chip_group.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_item_contact.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/item_contact.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_spinner_dropdown_item.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_delete.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_delete.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_button_primary.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_add.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_activity_add_contact.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/activity_add_contact.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_activity_login.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_star.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_spinner_item.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/spinner_item.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_back.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_edittext.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_edittext.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_ic_person.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_avatar.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_avatar.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.contactmanager-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.contactmanager-debug-31:/drawable_bg_button_outline.xml.flat",
+        "source": "com.example.contactmanager-main-33:/drawable/bg_button_outline.xml"
+    }
+]

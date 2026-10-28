@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Quản lý danh bạ</string>
+    <string name="login_subtitle">Đăng nhập để tiếp tục</string>
+    <string name="username_hint">Tên đăng nhập</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="contacts_title">Danh bạ</string>
+    <string name="total_contacts">Tổng</string>
+    <string name="favorite_contacts">yêu thích</string>
+    <string name="sample_total">3 liên hệ</string>
+    <string name="sample_favorite">1 yêu thích</string>
+    <string name="add_contact">+ Thêm liên hệ</string>
+    <string name="add_contact_title">Thêm liên hệ</string>
+    <string name="back">Quay lại</string>
+    <string name="name_hint">Họ và tên</string>
+    <string name="phone_hint">Số điện thoại</string>
+    <string name="gender_label">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="other">Khác</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="add_to_favorite">Thêm vào yêu thích</string>
+    <string name="note_hint">Ghi chú (không bắt buộc)</string>
+    <string name="save_contact">Lưu liên hệ</string>
+    <string name="call">Gọi điện</string>
+    <string name="delete_contact">Xóa liên hệ</string>
+    <string name="phone_label">Số điện thoại</string>
+    <string name="group_gender_label">Nhóm và giới tính</string>
+    <string name="note_label">Ghi chú</string>
+    <string name="login_error">Thông tin đăng nhập không hợp lệ</string>
+    <string name="sample_contact_initial">A</string>
+    <string name="sample_contact_name">Nguyễn Văn An</string>
+    <string name="sample_contact_phone">0123456789</string>
+    <string name="sample_contact_group_gender">Bạn bè • Nam</string>
+    <string name="empty_note">Chưa có ghi chú</string>
+    <string name="no_note">Không có ghi chú</string>
+    <string name="delete_contact_confirmation">Xóa liên hệ này?</string>
+    <string name="cancel">Hủy</string>
+    <string name="login_empty_error">Vui lòng nhập đầy đủ thông tin</string>
+    <string name="login_invalid_error">Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="name_required_error">Vui lòng nhập họ tên</string>
+    <string name="phone_format_error">Số điện thoại gồm 10 chữ số và bắt đầu bằng 0</string>
+    <string name="phone_exists_error">Số điện thoại đã tồn tại</string>
+    <string name="contact_added">Đã thêm liên hệ</string>
+    <string-array name="contact_groups">
+        <item>Gia đình</item>
+        <item>Bạn bè</item>
+        <item>Công việc</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

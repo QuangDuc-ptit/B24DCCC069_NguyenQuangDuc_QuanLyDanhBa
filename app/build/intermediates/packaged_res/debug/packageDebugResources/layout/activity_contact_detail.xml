@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_cream">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="240dp" android:gravity="center"
+        android:orientation="vertical" android:background="@drawable/bg_header_bottom_round">
+        <TextView android:id="@+id/tvAvatar" android:layout_width="88dp" android:layout_height="88dp"
+            android:background="@drawable/bg_avatar" android:gravity="center" android:text="@string/sample_contact_initial"
+            android:textColor="@color/green_900" android:textSize="36sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="@string/sample_contact_name" android:textColor="@color/bg_cream" android:textSize="24sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="20dp" app:cardBackgroundColor="@color/surface_white" app:cardCornerRadius="16dp" app:cardElevation="2dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_phone" android:contentDescription="@string/phone_label"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_label" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sample_contact_phone" android:textColor="@color/green_900" android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_person" android:contentDescription="@string/group_gender_label"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_gender_label" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvGroupGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sample_contact_group_gender" android:textColor="@color/green_900" android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_person" android:contentDescription="@string/note_label"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_label" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                    <TextView android:id="@+id/tvNote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/empty_note" android:textColor="@color/green_900" android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <CheckBox android:id="@+id/chkFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginStart="20dp" android:buttonTint="@color/green_800" android:text="@string/favorite" android:textColor="@color/text_primary"/>
+    <Button android:id="@+id/btnCall" style="@style/Widget.ContactManager.Button.Primary" android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="8dp" android:drawableStart="@drawable/ic_phone" android:text="@string/call"/>
+    <Button android:id="@+id/btnBack" style="@style/Widget.ContactManager.Button.Outline" android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="12dp" android:text="@string/back"/>
+    <Button android:id="@+id/btnDelete" style="@style/Widget.ContactManager.Button.Danger" android:layout_width="match_parent" android:layout_height="52dp"
+        android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="12dp" android:text="@string/delete_contact"/>
+</LinearLayout>
